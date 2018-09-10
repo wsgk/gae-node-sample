@@ -7,7 +7,9 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "clean": "rm -rf dist",
     "build": "tsc",
-    "start": "node dist/server.js"
+    "start": "node dist/server.js",
+    "tslint": "tslint --config tslint.json --project tsconfig.json",
+    "tslint:fix": "tslint --config tslint.json --project tsconfig.json --fix"
   },
   "keywords": [],
   "author": "",
