@@ -11,6 +11,17 @@
     "tslint": "tslint --config tslint.json --project tsconfig.json",
     "tslint:fix": "tslint --config tslint.json --project tsconfig.json --fix"
   },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "src/**/*.{ts,tsx}": [
+      "npm run tslint:fix",
+      "git add"
+    ]
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
