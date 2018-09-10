@@ -1,7 +1,7 @@
-const express = require("express");
+import express from "express";
 const app = express();
 
-app.get("/", (req, res) => {
+app.get("/", (req: express.Request, res: express.Response) => {
   res.send("Hello from App Engine!");
 });
 
