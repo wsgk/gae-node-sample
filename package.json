@@ -2,11 +2,11 @@
   "name": "gae-node-sample",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "private": true,
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "clean": "rm -rf dist",
-    "build": "tsc",
+    "build": "webpack",
     "start": "node dist/server.js",
     "tslint": "tslint --config tslint.json --project tsconfig.json",
     "tslint:fix": "tslint --config tslint.json --project tsconfig.json --fix"
