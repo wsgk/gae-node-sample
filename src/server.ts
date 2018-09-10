@@ -1,8 +1,8 @@
-import express from "express";
+import express from 'express';
 const app = express();
 
-app.get("/", (req: express.Request, res: express.Response) => {
-  res.send("Hello from App Engine!");
+app.get('/', (req: express.Request, res: express.Response) => {
+  res.send('Hello from App Engine!');
 });
 
 // Listen to the App Engine-specified port, or 8080 otherwise
