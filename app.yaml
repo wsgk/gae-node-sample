@@ -1,0 +1,2 @@
+service: gae-node-sample
+runtime: nodejs8
